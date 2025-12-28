@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="386.25" height="500" alt="image" src="https://github.com/user-attachments/assets/a72d3b65-d1f5-4a5a-8f46-ded9f1639946" />
+</p>
+
 ## pretty-quantum-notes ㅤ♡
 A cute visual notebook for learning quantum mechanics and quantum devices through gentle derivations, simple simulations, and approachable explanations. Great for beginners new to quantum or those needing an easy reference!
 
@@ -30,3 +34,5 @@ This repository is both a learning tool for me and a resource for others who pre
 
 ## current status ㅤ♡
 This is a living notebook and will grow slowly over time. Please be patient!
+
+
