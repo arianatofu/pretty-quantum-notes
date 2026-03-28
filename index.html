@@ -22,16 +22,23 @@ padding:40px;
 border-radius:25px;
 border:3px solid #ffcce6;
 box-shadow:0 15px 30px rgba(255,182,193,0.4);
-background-image: repeating-linear-gradient(
-white,
-white 28px,
-#ffd6e7 29px
-);
 }
 
 h1{
 text-align:center;
 color:#ff69b4;
+}
+
+/* lined paper area */
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:10px;
+margin-top:10px;
 }
 
 .page{
@@ -59,8 +66,11 @@ color:#ff69b4;
 <body>
 
 <div class="notebook">
+
 <h1>💗 Pretty Quantum Notes 💗</h1>
 <h1>Table of Contents</h1>
+
+<div class="lines">
 
 <div class="page"><a href="intro.html">Introduction</a></div>
 <div class="page"><a href="foundations.html">Foundations of Quantum Mechanics</a></div>
@@ -78,6 +88,7 @@ color:#ff69b4;
 <div class="page"><a href="identicalparticles.html">Identical Particles</a></div>
 <div class="page"><a href="dreams.html">Dreams</a></div>
 
+</div>
 
 </div>
 
