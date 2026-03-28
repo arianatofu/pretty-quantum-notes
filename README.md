@@ -29,6 +29,7 @@ This repository is both a learning tool for me and a resource for others who pre
 ## tools ㅤ♡
 - Python
 - numpy
+- scipy
 - matplotlib
 - Jupyter notebooks
 
