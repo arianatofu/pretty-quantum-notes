@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Harmonic Oscillator Simulation</title>
+
+<style>
+body {
+  background: linear-gradient(#ffe6f0,#fff5f8);
+  font-family: Georgia, serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.notebook {
+  width:700px;
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  border:3px solid #ffcce6;
+  box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1 {
+  text-align:center;
+  color:#ff69b4;
+}
+
+.lines {
+  background-image: repeating-linear-gradient(
+    white,
+    white 28px,
+    #ffd6e7 29px
+  );
+  padding:20px;
+  line-height:1.7;
+}
+
+.back {
+  text-align:center;
+  margin-top:25px;
+}
+
+a {
+  color:#ff69b4;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+iframe {
+  width:100%;
+  height:450px;
+  border:3px solid #ffcce6;
+  border-radius:20px;
+}
+
+.highlight {
+  color:#d63384;
+  font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Harmonic Oscillator Simulation</h1>
+
+<div class="lines">
+
+<h2>What is this?</h2>
+<p>This page shows a <span class="highlight">Quantum Harmonic Oscillator</span>. Imagine a tiny quantum kitty sitting on a springy pink platform. The kitty can move back and forth, but it prefers certain “energy levels” where it can bounce safely.</p>
+
+<h2>What the Graph Shows</h2>
+<ul>
+  <li><span class="highlight">x-axis:</span> Position of the kitty on the spring (left to right)</li>
+  <li><span class="highlight">y-axis:</span> How likely the kitty is to be at each spot</li>
+  <li>Each colored curve = a different <span class="highlight">energy level</span> (n=0 is lowest energy, n=1 is first excited, etc.)</li>
+</ul>
+
+<h2>Key Ideas</h2>
+<ul>
+  <li>Higher energy = more wiggles in the curve</li>
+  <li>Nodes (where the curve touches zero) = spots kitty is <span class="highlight">never</span> found</li>
+  <li>Wavefunction height = probability to find the kitty there</li>
+  <li>The kitty likes to “bounce” in certain positions depending on its energy 💫</li>
+</ul>
+
+<h2>Try it!</h2>
+<p>Hover over the curves in the interactive plot below. Toggle energy levels in the legend to see how the kitty’s bouncing changes.</p>
+
+<iframe src="harmonic_plot.html"></iframe>
+
+<h2>Summary</h2>
+<p>This simulation helps you <span class="highlight">see quantum wavefunctions</span> in action for the harmonic oscillator. Think of it as a kitty on a spring in a pink world, bouncing only where quantum mechanics allows!</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+</html>
