@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Hydrogen Atom</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Hydrogen Atom</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+The hydrogen atom is the simplest atom, consisting of a single proton and electron.  
+Its quantum description is a cornerstone of quantum mechanics, revealing <b>energy quantization, orbitals, and wavefunctions</b>.
+</p>
+
+<h2>Schrödinger Equation</h2>
+<p>
+In spherical coordinates, the time-independent Schrödinger equation for the hydrogen atom is:
+</p>
+
+<p style="text-align:center;">
+<code>- (ħ² / 2m) ∇² ψ(r,θ,φ) - (e² / 4πε₀ r) ψ(r,θ,φ) = E ψ(r,θ,φ)</code>
+</p>
+
+<h2>Separation of Variables</h2>
+<p>
+The wavefunction can be separated into radial and angular parts:
+</p>
+
+<p style="text-align:center;">
+<code>ψ_nlm(r,θ,φ) = R_nl(r) Y_lm(θ,φ)</code>
+</p>
+
+<p>
+Where <code>R_nl(r)</code> is the radial function and <code>Y_lm(θ,φ)</code> are the spherical harmonics.
+</p>
+
+<h2>Energy Levels</h2>
+<p>
+The quantized energy levels of the hydrogen atom are:
+</p>
+
+<p style="text-align:center;">
+<code>E_n = - (13.6 eV) / n²,  n = 1,2,3,...</code>
+</p>
+
+<p>
+These levels explain the discrete spectral lines of hydrogen.
+</p>
+
+<h2>Quantum Numbers</h2>
+<ul>
+<li>Principal quantum number <code>n = 1,2,...</code> determines energy and size.</li>
+<li>Orbital angular momentum <code>l = 0,...,n-1</code> determines shape.</li>
+<li>Magnetic quantum number <code>m = -l,...,l</code> determines orientation.</li>
+<li>Spin quantum number <code>s = ±1/2</code> for the electron’s intrinsic spin.</li>
+</ul>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Wavefunctions describe probability densities of the electron.</li>
+<li>Energy is quantized, and transitions produce spectral lines.</li>
+<li>Angular momentum and spin combine to give total angular momentum.</li>
+<li>The hydrogen atom serves as a model for multi-electron atoms and quantum chemistry.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+The hydrogen atom illustrates the principles of <b>quantization, orbital shapes, and electron behavior</b>.  
+It is a fundamental example for understanding atomic structure, spectroscopy, and the foundations of quantum mechanics.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

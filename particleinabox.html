@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Particle in a Box</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Particle in a Box</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+The “particle in a box” (also called the infinite potential well) is one of the simplest models in quantum mechanics.
+It describes a particle confined to a one-dimensional region with infinitely high walls, so it cannot escape.
+</p>
+
+<h2>Potential</h2>
+<p>
+The potential energy is defined as:
+</p>
+
+<p style="text-align:center;">
+<code>V(x) = 0,  0 &lt; x &lt; L</code><br>
+<code>V(x) = ∞, x ≤ 0 or x ≥ L</code>
+</p>
+
+<p>
+Here, <code>L</code> is the width of the box. The particle is free to move inside, but cannot exist outside.
+</p>
+
+<h2>Time-Independent Schrödinger Equation</h2>
+<p>
+Inside the box, the time-independent Schrödinger equation is:
+</p>
+
+<p style="text-align:center;">
+<code>- (ħ² / 2m) d²ψ/dx² = E ψ</code>
+</p>
+
+<p>
+With boundary conditions <code>ψ(0) = ψ(L) = 0</code>.
+</p>
+
+<h2>Solutions</h2>
+<p>
+The normalized wavefunctions are:
+</p>
+
+<p style="text-align:center;">
+<code>ψ_n(x) = √(2/L) sin(n π x / L), n = 1,2,3,...</code>
+</p>
+
+<p>
+The corresponding energy levels are:
+</p>
+
+<p style="text-align:center;">
+<code>E_n = (n² π² ħ²) / (2 m L²), n = 1,2,3,...</code>
+</p>
+
+<h2>Key Points</h2>
+<ul>
+<li>Energy is quantized – only discrete energy levels are allowed.</li>
+<li>Wavefunctions are sinusoidal inside the box.</li>
+<li>The probability of finding the particle is highest at the antinodes of the wavefunction.</li>
+<li>The ground state (n=1) has nonzero energy – called zero-point energy.</li>
+<li>This model helps understand more complex quantum systems.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+The particle in a box is a foundational example in quantum mechanics. 
+It illustrates <b>quantization</b>, <b>wavefunction behavior</b>, and the importance of <b>boundary conditions</b>. 
+Many other quantum problems build on this simple model.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

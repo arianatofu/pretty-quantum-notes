@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Spin</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Spin</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+Spin is an intrinsic form of angular momentum carried by particles.  
+Unlike orbital angular momentum, spin does not depend on spatial motion.  
+It is fundamental for understanding <b>electrons, protons, neutrons</b>, and other quantum particles.
+</p>
+
+<h2>Spin Operators</h2>
+<p>
+Spin is represented by operators <code>Ŝ_x, Ŝ_y, Ŝ_z</code> that satisfy the same angular momentum commutation relations:
+</p>
+
+<p style="text-align:center;">
+<code>[Ŝ_x, Ŝ_y] = i ħ Ŝ_z</code><br>
+<code>[Ŝ_y, Ŝ_z] = i ħ Ŝ_x</code><br>
+<code>[Ŝ_z, Ŝ_x] = i ħ Ŝ_y</code>
+</p>
+
+<h2>Spin-1/2 Particles</h2>
+<p>
+For spin-1/2 particles, the eigenvalues of <code>Ŝ_z</code> are:
+</p>
+
+<p style="text-align:center;">
+<code>m_s = ± 1/2</code>
+</p>
+
+<p>
+The corresponding eigenstates are often written as:
+</p>
+
+<p style="text-align:center;">
+<code>|↑⟩ and |↓⟩</code>
+</p>
+
+<h2>Pauli Matrices</h2>
+<p>
+Spin-1/2 operators can be expressed using the Pauli matrices:
+</p>
+
+<p style="text-align:center;">
+<code>Ŝ_x = (ħ/2) σ_x, Ŝ_y = (ħ/2) σ_y, Ŝ_z = (ħ/2) σ_z</code>
+</p>
+
+<p>
+Where:
+</p>
+
+<p style="text-align:center;">
+<code>σ_x = [[0,1],[1,0]], σ_y = [[0,-i],[i,0]], σ_z = [[1,0],[0,-1]]</code>
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Spin is quantized and intrinsic to particles.</li>
+<li>Spin operators do not commute; you cannot know all components simultaneously.</li>
+<li>Spin-1/2 particles have two possible states along any axis.</li>
+<li>Spin is essential for <b>magnetic properties, quantum statistics, and quantum information</b>.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+Spin is a fundamental property of quantum particles that influences <b>magnetism, entanglement, and particle behavior</b>.  
+Understanding spin is essential for atomic structure, spectroscopy, and quantum computing.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

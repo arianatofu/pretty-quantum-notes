@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mathematical Tools for Quantum Mechanics</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Mathematical Tools</h1>
+
+<div class="lines">
+
+<h2>Complex Numbers</h2>
+<p>
+Quantum mechanics relies heavily on complex numbers. A general complex number is 
+written as <code>z = x + iy</code>, where <code>i² = -1</code>. 
+Wavefunctions are typically complex-valued.
+</p>
+
+<h2>Linear Algebra Basics</h2>
+<p>
+Vectors, matrices, and operations like addition, multiplication, and transpose
+are essential. Quantum states are represented as vectors in a Hilbert space.
+</p>
+
+<h2>Inner Products</h2>
+<p>
+The inner product between two vectors <code>|ψ⟩</code> and <code>|φ⟩</code> is 
+written as <code>⟨φ|ψ⟩</code>. It gives a measure of “overlap” or probability amplitude.
+</p>
+
+<h2>Operators</h2>
+<p>
+Observables in quantum mechanics (like position or momentum) are represented
+as operators. Operators act on vectors (wavefunctions), e.g. 
+<code>Ô|ψ⟩ = λ|ψ⟩</code> for eigenvectors.
+</p>
+
+<h2>Eigenvalues and Eigenvectors</h2>
+<p>
+Many quantum problems reduce to solving the eigenvalue equation 
+<code>Ô|ψ⟩ = λ|ψ⟩</code>. 
+Eigenvalues correspond to measurable quantities, eigenvectors to the corresponding states.
+</p>
+
+<h2>Dirac Bra–Ket Notation</h2>
+<p>
+Dirac notation is a compact way to write quantum states: 
+<code>|ψ⟩</code> is a ket (column vector), 
+<code>⟨ψ|</code> is a bra (row vector). 
+Inner products are written as <code>⟨φ|ψ⟩</code>.
+</p>
+
+<h2>Fourier Transforms</h2>
+<p>
+Switching between position and momentum representations often uses Fourier transforms:
+<code>ψ(p) = (1/√(2πħ)) ∫ ψ(x) e^{-ipx/ħ} dx</code>. 
+This is essential for understanding momentum-space wavefunctions.
+</p>
+
+<h2>Summary</h2>
+<p>
+These mathematical tools provide the foundation for the rest of quantum mechanics.
+Mastering them will make learning topics like the Schrödinger equation, 
+angular momentum, and spin much easier!
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Measurement Theory</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Measurement Theory</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+Measurement in quantum mechanics is very different from classical physics. 
+Observables like position, momentum, or spin are represented by operators.  
+The act of measurement fundamentally affects the state of the system.
+</p>
+
+<h2>Observables and Operators</h2>
+<p>
+Each physical quantity corresponds to a Hermitian operator <code>Ô</code>.  
+If <code>|ψ⟩</code> is the state of the system, measuring <code>Ô</code> can only give one of its eigenvalues <code>λ</code>.
+</p>
+
+<h2>Eigenvalues and Eigenstates</h2>
+<p>
+The eigenvalue equation is:
+</p>
+
+<p style="text-align:center;">
+<code>Ô |φ⟩ = λ |φ⟩</code>
+</p>
+
+<p>
+Here, <code>|φ⟩</code> is an eigenstate of the operator with eigenvalue <code>λ</code>.  
+After measurement, the system collapses into the eigenstate corresponding to the measured value.
+</p>
+
+<h2>Probability of Measurement Outcomes</h2>
+<p>
+If the system is in a state <code>|ψ⟩</code>, the probability of measuring eigenvalue <code>λ</code> (with eigenstate <code>|φ⟩</code>) is:
+</p>
+
+<p style="text-align:center;">
+<code>P(λ) = |⟨φ|ψ⟩|²</code>
+</p>
+
+<p>
+This is why quantum measurements are inherently probabilistic.
+</p>
+
+<h2>Expectation Values</h2>
+<p>
+The average value expected from many measurements of an observable <code>Ô</code> is called the expectation value:
+</p>
+
+<p style="text-align:center;">
+<code>⟨Ô⟩ = ⟨ψ| Ô |ψ⟩</code>
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Measurement collapses the wavefunction into an eigenstate.</li>
+<li>Only eigenvalues of the operator can be observed.</li>
+<li>Quantum mechanics predicts probabilities, not deterministic outcomes.</li>
+<li>Repeated measurements of the same observable can give the same or different results depending on the system’s state.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+Quantum measurement theory shows that <b>observation is an active part of quantum systems</b>,  
+not just a passive reading of pre-existing properties.  
+Understanding this is crucial for concepts like superposition, entanglement, and quantum information.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

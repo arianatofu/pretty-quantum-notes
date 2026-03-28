@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Time Evolution</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Time Evolution</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+Time evolution describes how a quantum system changes over time.  
+The fundamental rule comes from the <b>time-dependent Schrödinger equation</b>:
+</p>
+
+<p style="text-align:center;">
+<code>iħ ∂|ψ(t)⟩/∂t = Ĥ |ψ(t)⟩</code>
+</p>
+
+<h2>Time Evolution Operator</h2>
+<p>
+For a system with a time-independent Hamiltonian, the state at time <code>t</code> is given by:
+</p>
+
+<p style="text-align:center;">
+<code>|ψ(t)⟩ = U(t) |ψ(0)⟩,  where  U(t) = e^(-i Ĥ t / ħ)</code>
+</p>
+
+<p>
+Here, <code>U(t)</code> is the <b>time evolution operator</b>, which is unitary: <code>U†U = I</code>.  
+Unitary operators preserve probabilities.
+</p>
+
+<h2>Energy Eigenstates</h2>
+<p>
+If the system is initially in an energy eigenstate <code>|φ_n⟩</code> with eigenvalue <code>E_n</code>:
+</p>
+
+<p style="text-align:center;">
+<code>Ĥ |φ_n⟩ = E_n |φ_n⟩</code>
+</p>
+
+<p>
+Then the time evolution is simple:
+</p>
+
+<p style="text-align:center;">
+<code>|ψ_n(t)⟩ = e^(-i E_n t / ħ) |φ_n⟩</code>
+</p>
+
+<p>
+The probability density does not change over time for stationary states.
+</p>
+
+<h2>Superposition of States</h2>
+<p>
+For a state that is a superposition:
+</p>
+
+<p style="text-align:center;">
+<code>|ψ(0)⟩ = ∑ c_n |φ_n⟩</code>
+</p>
+
+<p>
+Each component evolves independently:
+</p>
+
+<p style="text-align:center;">
+<code>|ψ(t)⟩ = ∑ c_n e^(-i E_n t / ħ) |φ_n⟩</code>
+</p>
+
+<p>
+This leads to <b>interference and time-dependent probabilities</b>.
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Time evolution is unitary and preserves probabilities.</li>
+<li>Energy eigenstates are stationary – their probabilities don’t change.</li>
+<li>Superpositions evolve in time and can show oscillations or interference.</li>
+<li>The evolution of observables can be computed in the Schrödinger or Heisenberg pictures.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+Understanding time evolution is essential for predicting how quantum systems behave,  
+from simple particles in a box to atoms, molecules, and quantum computers!
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

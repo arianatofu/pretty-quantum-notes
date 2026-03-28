@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Angular Momentum</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Angular Momentum</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+Angular momentum is a fundamental quantity in quantum mechanics, describing rotational motion.  
+It comes in two forms: <b>orbital</b> and <b>intrinsic (spin)</b>.  
+Operators represent angular momentum components, and their eigenvalues are quantized.
+</p>
+
+<h2>Orbital Angular Momentum</h2>
+<p>
+For a particle moving in space, the orbital angular momentum operator is:
+</p>
+
+<p style="text-align:center;">
+<code>𝐿̂ = r × p̂</code>
+</p>
+
+<p>
+The components satisfy the commutation relations:
+</p>
+
+<p style="text-align:center;">
+<code>[L̂_x, L̂_y] = i ħ L̂_z</code><br>
+<code>[L̂_y, L̂_z] = i ħ L̂_x</code><br>
+<code>[L̂_z, L̂_x] = i ħ L̂_y</code>
+</p>
+
+<h2>Eigenvalues and Quantization</h2>
+<p>
+The square of the angular momentum and its z-component have discrete eigenvalues:
+</p>
+
+<p style="text-align:center;">
+<code>𝐿̂² |l,m⟩ = ħ² l(l+1) |l,m⟩</code><br>
+<code>L̂_z |l,m⟩ = ħ m |l,m⟩</code>
+</p>
+
+<p>
+Where <code>l = 0,1,2,...</code> and <code>m = -l,...,l</code>.
+</p>
+
+<h2>Spin Angular Momentum</h2>
+<p>
+Spin is an intrinsic form of angular momentum independent of motion in space.  
+For spin-1/2 particles (like electrons):
+</p>
+
+<p style="text-align:center;">
+<code>Ŝ² |s,m_s⟩ = ħ² s(s+1) |s,m_s⟩,  Ŝ_z |s,m_s⟩ = ħ m_s |s,m_s⟩</code>
+</p>
+
+<p>
+Here, <code>s = 1/2</code> and <code>m_s = ±1/2</code>.
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Angular momentum is quantized: only certain values are allowed.</li>
+<li>Operators for different components do not commute – you cannot know all components simultaneously.</li>
+<li>Orbital and spin angular momentum combine to give total angular momentum.</li>
+<li>Angular momentum rules are essential for atomic structure, spectroscopy, and quantum chemistry.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+Quantum angular momentum explains rotational properties of particles, atoms, and molecules.  
+Understanding it is crucial for <b>spin, magnetic moments, and selection rules</b> in quantum systems.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

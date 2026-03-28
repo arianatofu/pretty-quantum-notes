@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Harmonic Oscillator</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Harmonic Oscillator</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+The quantum harmonic oscillator is a model that describes a particle subject to a restoring force proportional to its displacement:
+</p>
+
+<p style="text-align:center;">
+<code>F = -k x</code>
+</p>
+
+<p>
+It is a central model in quantum mechanics because many systems (molecules, vibrations, phonons) can be approximated as harmonic oscillators near equilibrium.
+</p>
+
+<h2>Potential Energy</h2>
+<p>
+The potential energy of a quantum harmonic oscillator is:
+</p>
+
+<p style="text-align:center;">
+<code>V(x) = 1/2 m ω² x²</code>
+</p>
+
+<p>
+Here, <code>m</code> is the mass, and <code>ω</code> is the angular frequency.
+</p>
+
+<h2>Schrödinger Equation</h2>
+<p>
+The time-independent Schrödinger equation for this system is:
+</p>
+
+<p style="text-align:center;">
+<code>- (ħ² / 2m) d²ψ/dx² + 1/2 m ω² x² ψ = E ψ</code>
+</p>
+
+<h2>Solutions</h2>
+<p>
+The energy levels are quantized and given by:
+</p>
+
+<p style="text-align:center;">
+<code>E_n = ħ ω (n + 1/2), n = 0,1,2,...</code>
+</p>
+
+<p>
+The corresponding wavefunctions involve Hermite polynomials:
+</p>
+
+<p style="text-align:center;">
+<code>ψ_n(x) = (m ω / π ħ)^(1/4) (1/√(2^n n!)) H_n(√(m ω / ħ) x) e^(-m ω x² / 2ħ)</code>
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Energy levels are evenly spaced: E_{n+1} - E_n = ħω.</li>
+<li>The ground state energy is nonzero: E_0 = ½ ħω (zero-point energy).</li>
+<li>Wavefunctions are either symmetric or antisymmetric depending on n.</li>
+<li>This model helps explain vibrations in molecules and lattice vibrations in solids.</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+The quantum harmonic oscillator is one of the most important exactly solvable models in quantum mechanics.  
+It illustrates <b>quantization, zero-point energy, and wavefunction behavior</b> in a simple and elegant way.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

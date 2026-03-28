@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Quantum Approximation Methods</title>
+
+<style>
+
+body{
+background: linear-gradient(#ffe6f0,#fff5f8);
+font-family: Georgia, serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.notebook{
+width:650px;
+background:white;
+padding:40px;
+border-radius:25px;
+border:3px solid #ffcce6;
+box-shadow:0 15px 30px rgba(255,182,193,0.4);
+}
+
+h1{
+text-align:center;
+color:#ff69b4;
+}
+
+.lines{
+background-image: repeating-linear-gradient(
+white,
+white 28px,
+#ffd6e7 29px
+);
+padding:20px;
+line-height:1.7;
+}
+
+h2{
+color:#ff69b4;
+margin-top:25px;
+}
+
+p{
+margin-bottom:15px;
+}
+
+code{
+background:#fff0f6;
+padding:2px 6px;
+border-radius:5px;
+color:#d63384;
+font-family:monospace;
+}
+
+ul{
+margin-left:20px;
+}
+
+.back{
+text-align:center;
+margin-top:25px;
+}
+
+a{
+color:#ff69b4;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="notebook">
+
+<h1>Quantum Approximation Methods</h1>
+
+<div class="lines">
+
+<h2>Introduction</h2>
+<p>
+Many quantum systems cannot be solved exactly.  
+Approximation methods help us estimate energy levels and states.  
+Two of the most common methods are the <strong>Variational Method</strong> and <strong>Perturbation Theory</strong>.
+</p>
+
+<h2>Variational Method</h2>
+<p>
+The variational principle states that for a trial wavefunction <code>|ψ_trial⟩</code>:
+</p>
+
+<p style="text-align:center;">
+<code>E_0 ≤ ⟨ψ_trial| Ĥ |ψ_trial⟩ / ⟨ψ_trial|ψ_trial⟩</code>
+</p>
+
+<p>
+By adjusting parameters in <code>|ψ_trial⟩</code>, we can estimate the ground state energy.  
+This is especially useful when exact solutions are impossible.
+</p>
+
+<h2>Perturbation Theory</h2>
+<p>
+Perturbation theory is used when the Hamiltonian can be written as:
+</p>
+
+<p style="text-align:center;">
+<code>Ĥ = Ĥ₀ + λ V̂</code>
+</p>
+
+<p>
+Where <code>Ĥ₀</code> is solvable exactly, and <code>λ V̂</code> is a small perturbation.  
+We then expand energies and states as series in <code>λ</code> to approximate the effect of the perturbation.
+</p>
+
+<h2>Time-Independent Perturbation (Brief)</h2>
+<p>
+For non-degenerate states:
+</p>
+
+<p style="text-align:center;">
+<code>E_n ≈ E_n^(0) + ⟨n^(0)|V̂|n^(0)⟩</code>
+</p>
+
+<p>
+The first-order correction to the wavefunction is:
+</p>
+
+<p style="text-align:center;">
+<code>|n^(1)⟩ = Σ_(m≠n) (⟨m^(0)|V̂|n^(0)⟩ / (E_n^(0) - E_m^(0))) |m^(0)⟩</code>
+</p>
+
+<h2>Key Concepts</h2>
+<ul>
+<li>Approximation methods help when exact solutions are impossible.</li>
+<li>The variational method estimates ground state energies using trial wavefunctions.</li>
+<li>Perturbation theory expands around a solvable Hamiltonian.</li>
+<li>First-order approximations often give surprisingly good results!</li>
+</ul>
+
+<h2>Summary</h2>
+<p>
+Approximation methods are essential tools in quantum mechanics.  
+They let us <b>estimate energies, wavefunctions, and observable effects</b> for complex systems,  
+from atoms to molecules to quantum devices.
+</p>
+
+</div>
+
+<div class="back">
+<a href="index.html">← Back to Table of Contents</a>
+</div>
+
+</div>
+
+</body>
+
+</html>
